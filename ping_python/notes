@@ -1,0 +1,25 @@
+Big Endian Vs Little Endian
+
+BIG ENDIAN (network uses it):-
+
+(32-bit integer) 1c2c3b4d  -->  (in memory view) 1c2c3b4d
+
+LITTLE ENDIAN (x86,ARM,etc):-
+
+(32-bit integer) 1c2c3b4d  -->  (in memory view) 4d3b2c1c
+
+****
+ICMP Packet Structure
+|Header|
+<--Type-->
+<--Code-->
+<--Checksum-->
+<--Identifier-->
+<--Sequence Number-->
+<--Time Stamp-->
+|Data|
+<Bytes>
+****
+
+**checksum of ICMP packet is created from type header till actual data(assume checksum to 0)**
+

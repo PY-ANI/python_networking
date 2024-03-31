@@ -23,7 +23,7 @@ def CheckSum(bytedata):
 	csum = (csum >> 16)+(csum & 0xffff)
 	csum += (csum >> 16)
 	csum = ~csum & 0xffff
-	csum = htons(csum)
+	csum = htons(csum) # converting byteorder to network byteorder
 	return csum
 
 if  __name__ == "__main__":
